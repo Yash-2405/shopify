@@ -115,32 +115,6 @@ Run the included test script:
 python test_api.py
 ```
 
-## Architecture
-
-### Project Structure
-```
-shopify-insights-fetcher/
-├── app/
-│   ├── api/
-│   │   └── api_v1/
-│   │       ├── endpoints/
-│   │       │   └── shopify.py      # API endpoints
-│   │       └── api.py              # Router configuration
-│   ├── core/
-│   │   └── config.py               # Application settings
-│   ├── models/
-│   │   └── brand.py                # Database models
-│   ├── schemas/
-│   │   └── brand.py                # Pydantic data models
-│   ├── services/
-│   │   ├── shopify_scraper.py      # Main scraping logic
-│   │   ├── database.py             # Database configuration
-│   │   └── brand_service.py        # Business logic
-│   └── main.py                     # FastAPI application
-├── requirements.txt                # Dependencies
-├── test_api.py                    # Test script
-└── README.md                      # Documentation
-```
 
 ### Key Components
 
